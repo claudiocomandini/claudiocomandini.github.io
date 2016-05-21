@@ -1,0 +1,13 @@
+
+http:/www.claudiocomandini.net/00scritture/
+http:/www.claudiocomandini.net/atom.xml
+http:/www.claudiocomandini.net/backup/
+http:/www.claudiocomandini.net/
+http:/www.claudiocomandini.net/note/
+http:/www.claudiocomandini.net/pubblicazioni/
+http:/www.claudiocomandini.net/rss.xml
+http:/www.claudiocomandini.net/sitemap.txt
+http:/www.claudiocomandini.net/tags/
+
+http:/www.claudiocomandini.net/2016/02/08/bowie/
+http:/www.claudiocomandini.net/2016/02/02/culdesac/
