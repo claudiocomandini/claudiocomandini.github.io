@@ -1,74 +1,28 @@
+---
+layout: null
+title : Atom Feed
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>decostruzioni</title>
- <link href="http:/www.claudiocomandini.net/atom.xml" rel="self"/>
- <link href="http:/www.claudiocomandini.net"/>
- <updated>2016-05-17T11:53:06+02:00</updated>
- <id>http:/www.claudiocomandini.net</id>
+ <title>{{ site.title | xml_escape }}</title>
+ <link href="{{ site.production_url }}{{ site.JB.atom_path }}" rel="self"/>
+ <link href="{{ site.production_url }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.production_url }}</id>
  <author>
-   <name>Claudio Comandini</name>
-   <email>claudiocomandini@infinito.it</email>
+   <name>{{ site.author.name | xml_escape }}</name>
+   <email>{{ site.author.email }}</email>
  </author>
 
- 
+ {% for post in site.posts limit:20 %}
  <entry>
-   <title>Cinque questioni su David Bowie</title>
-   <link href="http:/www.claudiocomandini.net/2016/02/08/bowie/"/>
-   <updated>2016-02-08T20:30:00+01:00</updated>
-   <id>http:/www.claudiocomandini.net/2016/02/08/bowie</id>
-   <content type="html">&lt;h3 id=&quot;claudio-comandini&quot;&gt;Claudio Comandini&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
-&lt;img src=&quot;https://farm2.staticflickr.com/1609/23952322609_41755f3bc5.jpg&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p style=&quot; background:  #eeeee5; border: 20px solid #eeeee5&quot;&gt;&lt;br /&gt;
-&lt;em&gt;Fantascienza, società, religione, sessualità e arte nelle canzoni di un grande maestro.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In &lt;em&gt;2001: A Space Odissey&lt;/em&gt; di Kubrick un astronauta si perde nello spazio; qualcuno, piuttosto incerto nella carriera e negli affetti, vide la scena e &lt;a href=&quot;https://www.youtube.com/watch?v=D67kmFzSh_o&quot;&gt;cantò&lt;/a&gt;: &lt;em&gt;«Planet earth is blue, and there’s nothing I can do»&lt;/em&gt;. Forse, pensava che potesse finire così, contemplando un’umanità smarrita nell’ignoto che si ostina a dominare. Successivamente, continuò a &lt;a href=&quot;https://www.youtube.com/watch?v=pl3vxEudif8&quot;&gt;cambiare&lt;/a&gt;, approfondendo il rapporto con la &lt;em&gt;speculative fiction&lt;/em&gt;: fu &lt;a href=&quot;https://www.youtube.com/watch?v=IWm03wYBTbM&amp;amp;list=PLuR3CWq59OyrTdWAeVkqH3F6UziQICYeN&amp;amp;index=1&quot;&gt;polvere di stelle&lt;/a&gt; a cinque anni dalla fine e quindi ribelle tra i &lt;a href=&quot;https://www.youtube.com/watch?v=25uvh4axNCQ&quot;&gt;cani di diamante&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=zfQd2LlJ_Rs&quot;&gt;cadde sulla terra&lt;/a&gt; e divenne poi &lt;a href=&quot;https://www.youtube.com/watch?v=sjYHTCR0qBk&quot;&gt;ragazzo spaziale&lt;/a&gt;. Ora, ci informa di essere stella: non del pop o del porno, ma &lt;em&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kszLwBaC4Sw&quot;&gt;Blackstar&lt;/a&gt;&lt;/em&gt;, stella nera. Potrà mai morire davvero?&lt;/p&gt;
-
-&lt;p&gt;Nel 1969 &lt;em&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=om_azFmk9dc&quot;&gt;Cygnet Committee&lt;/a&gt;&lt;/em&gt;, con le parole &lt;em&gt;«I miei amici parlano/ di gloria, sogni non detti, dove tutto è/ Dio e Dio è solo una parola»&lt;/em&gt; e &lt;em&gt;«Noi possiamo costringerti a essere libero»&lt;/em&gt;, critica la svendita di se stesso in cui il movimento hippy, ubriaco di autocelebrazione, era già coinvolto. Nel 1995, &lt;em&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=JJkUWJ8xdC0&quot;&gt;No Control&lt;/a&gt;&lt;/em&gt; delinea la contemporanea profezia di un mondo senza speranza: &lt;em&gt;«Ripiegati nel tuo angolo/ Non rivelare a Dio i tuoi piani/ È tutto corrotto/ Senza controllo.»&lt;/em&gt; È il 1980, e alla fine di &lt;em&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=q4HG-OjMxzE&quot;&gt;It’s No Game (pt 1)&lt;/a&gt;&lt;/em&gt;, &lt;em&gt;«annoiato dagli eventi»&lt;/em&gt;, intima di tacere. Forse, Dio è stanco di noi. E qual è oggi l’alternativa in un mondo che cambiando è diventato sempre più infimo?&lt;/p&gt;
-
-&lt;p&gt;Sembra che i vestiti del periodo di &lt;a href=&quot;https://www.youtube.com/watch?v=4B5zmDz4vR4&quot;&gt;checca spaziale&lt;/a&gt; fossero cuciti da sua moglie Angela; altre leggende, da lui stesso alimentate, dicevano che l’avesse conosciuta perché andavano con lo stesso ragazzo. Rifiutò però di rappresentare un movimento gay ancora alieno da ogni ipotesi di unioni civili. Più tardi, indossando altri abiti, ammise con rammarico di aver sposato la prima moglie per farle ottenere il permesso di soggiorno, poi biasimò l’&lt;a href=&quot;https://www.youtube.com/watch?v=HnWOWVhFrLg&quot;&gt;amore moderno&lt;/a&gt;. Convolato a nozze con la modella sudanese Imam, negò di essere omosessuale e anche bisessuale, pur essendo stato &lt;em&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=zZdNxKkMiRE&quot;&gt;«terribilmente promiscuo»&lt;/a&gt;&lt;/em&gt;. È sempre un buon affare il marketing dell’ambiguità?&lt;/p&gt;
-
-&lt;p&gt;Faceva sempre di testa sua e rifiutava l’opinione degli ignoranti, ma sapeva con chi consigliarsi. Pensava che l’arte non dovesse affatto essere comprensibile a tutti, pur trovando che quanto avessero da dire sulle sue canzoni fosse più interessante delle stesse. In un periodo di fervore nietszcheano, mentre &lt;a href=&quot;https://www.youtube.com/watch?v=KxtqJxq2yck&quot;&gt;tra una stazione e l’altra&lt;/a&gt; strambi e tossici lo adoravano, pensò di candidarsi a primo ministro. Oggi, gli slogan della pubblicità riciclano quelli della contestazione, dilagano dittatura dell’effimero e messianismi da buco nero: una strategia di mimetizzazione e disorientamento, capace di cavalcare con personalità ogni tendenza, può ancora avere efficacia?&lt;/p&gt;
-
-&lt;p&gt;E cos’altro ascoltare?&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Fotografia: “David Bowie” by Masayoshi Sukita (1972) - Some rights are reserved&lt;/em&gt;&lt;/p&gt;
-</content>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="{{ site.production_url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.production_url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- 
- <entry>
-   <title>Cul-de-sac</title>
-   <link href="http:/www.claudiocomandini.net/2016/02/02/culdesac/"/>
-   <updated>2016-02-02T20:30:00+01:00</updated>
-   <id>http:/www.claudiocomandini.net/2016/02/02/culdesac</id>
-   <content type="html">&lt;h3 id=&quot;claudio-comandini&quot;&gt;Claudio Comandini&lt;/h3&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-&lt;img src=&quot;/assets/strada_bloccata.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Strada bloccata - Mirandola, agosto 2015&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot; background:  #eeeee5; border: 20px solid #eeeee5&quot;&gt;&lt;em&gt;Dopo Parigi: ritrovare il verso&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;C’è una vita ordinata dalla morte. Così il presente sembra configurarsi. Una sintonia da cercare tra un disturbo e l’altro. Da scrutare in piccole finestre virtuali, non propriamente esistenti, dove ogni forma è soltanto apparire pur pretendendo presenza. Niente deve essere estraneo al comprendere. Ora ascolto Serge Gainsbourg e Jane Birkin, leggo Al-Azraqī e Abu Bakr Naji. Ogni momento resta immobile, nel trascorrere inesorabile di un tempo infranto. Ovunque sia questo qui, dovunque sia questo adesso, io non ci sono, e nemmeno tu.&lt;/p&gt;
-
-&lt;p&gt;Dietro vetri piangenti la città immensa si distende sotto un cielo grigio. Le luci cominciano a brillare in lontananza annunciando una lunga oscurità. Due voci cantano “Je t’aime”: era molto tempo fa. Adesso siamo soli. La Mecca, il tempio al centro del mondo, fu schiuma sull’acqua prima che Dio onnipotente creasse il cielo e la terra: da essa fu spianato questo nostro universo. Egli sa quanto noi ignoriamo. Ora però non c’è terra, non c’è amore, Dio bestemmia in un bar. Forse solo i morti sono, tenaci più di questa vita introvabile.&lt;/p&gt;
-
-&lt;p&gt;Il potere è illusione: il potere è reale. Il momento giusto è quello in cui agisci: il momento è ora. Ma quando è l’adesso in questi tempi dilatati? Non è certamente la fretta a deciderlo; forse, nemmeno l’attesa, ma una congiuntura sempre possibile eppure ogni volta pronta a dileguarsi. Nessun gesto ci soccorre, troppe chiacchiere si affollano. Qualcuno dice di sapere tutto e ignora l’essenziale. Non è questo il momento. Io non ti ascolto, tu non mi senti. Noi siamo assenti, noi siamo l’assenza, noi non siamo affatto noi. Troppo sangue, nessun cuore.&lt;/p&gt;
-
-&lt;p&gt;È colpa dell’Occidente, è responsabilità dell’Islam. Gli americani sono il male, il danno è l’Europa; sono in errore i sunniti, gli sciiti sbagliano. I russi sì; i russi no; i russi forse. In lotta con i curdi in lotta tra di loro. Uscire dal Medio Oriente non è possibile. Impossibile la guerra. La guerra è infinita. La civiltà di Satana ha stabilizzato il controllo nel proprio stesso collasso. La gestione della ferocia è l’amministrazione del caos. Non si può andare avanti, non si torna indietro. Le torri crollano ancora. A Parigi qualcuno continua a fuggire.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Fotografia: Claudio Comandini, “Strada bloccata” - Mirandola, agosto 2015&lt;/em&gt;&lt;/p&gt;
-</content>
- </entry>
- 
+ {% endfor %}
  
 </feed>
