@@ -2,7 +2,7 @@
 
 Un Blog letterario di Claudio Comandini
 
-claudio.comandini@infinito.it
+posta@claudiocomandini.net
 
 
 Per leggerlo andate su 
