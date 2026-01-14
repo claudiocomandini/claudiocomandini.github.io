@@ -1,10 +1,4 @@
-# www.claudiocomandini.net
-
-Un Blog letterario di Claudio Comandini
-
-posta@claudiocomandini.net
 
 
-Per leggerlo andate su 
+## Un Blog letterario di Claudio Comandini
 
-http://www.claudiocomandini.net
